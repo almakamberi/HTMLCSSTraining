@@ -1,0 +1,28 @@
+ /* Pseudo-klasa :hover për butonat */
+ button:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Pseudo-elementi ::before për ikonën para paragrafit */
+p::before {
+    content: "📧 ";
+    color: #2c3e50;
+}
+
+/* Pseudo-klasa :nth-child() për elementet e radhës në listë */
+li:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+/* Selektori i atributeve për lidhjet që fillojnë me "https" */
+a[href^="https"] {
+    color: green;
+}
+
+/* Pseudo-elementi ::first-letter për stilimin e shkronjës së parë */
+p:first-letter {
+    font-size: 24px;
+    color: #3498db;
+    font-weight: bold;
+}

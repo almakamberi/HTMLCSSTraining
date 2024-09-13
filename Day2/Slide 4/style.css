@@ -1,0 +1,27 @@
+/* Stilizimi për butonin kur kursorin kalon mbi të */
+button:hover {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    border: 2px solid #3e8e41;
+}
+
+/* Shtimi i ikonës së emailit përpara tekstit duke përdorur ::before */
+p::before {
+    content: "📧 ";
+    color: #2c3e50;
+    font-size: 20px;
+}
+
+/* Stilizimi i shkronjës së parë të paragrafit duke përdorur :first-letter */
+p:first-letter {
+    font-size: 24px;
+    font-weight: bold;
+    color: #3498db;
+}
+
+/* Stilizimi i titullit */
+h1 {
+    font-size: 36px;
+    color: #333;
+}

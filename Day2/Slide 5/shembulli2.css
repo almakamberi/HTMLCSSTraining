@@ -1,0 +1,43 @@
+ /* Stilizimi i butonit me një animacion kur kalon kursorin mbi të */
+ button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #2ecc71;
+    transform: scale(1.1); /* Rrit butonin kur kalon kursorin mbi të */
+}
+
+/* Pseudo-elementi ::after për të shtuar një shirit dekorativ pas titullit */
+h1::after {
+    content: "";
+    display: block;
+    width: 50%;
+    height: 4px;
+    background-color: #3498db;
+    margin: 10px 0;
+    transition: width 0.3s ease;
+}
+
+h1:hover::after {
+    width: 100%; /* Zgjat shiritin kur kalon kursorin mbi titull */
+}
+
+/* Pseudo-klasa :nth-of-type() për stilimin e elementit të tretë */
+ul li:nth-of-type(3) {
+    background-color: #f39c12;
+    font-weight: bold;
+}
+
+/* Pseudo-klasa :focus për të stiluar fushën e tekstit kur përqendrohet përdoruesi */
+input:focus {
+    outline: none;
+    border: 2px solid #3498db;
+    box-shadow: 0 0 10px rgba(52, 152, 219, 0.5);
+}

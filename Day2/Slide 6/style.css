@@ -1,0 +1,63 @@
+ /* Stilizimi i navigimit dhe animacioni kur kalon mbi elementet e menusë */
+ nav a {
+    text-decoration: none;
+    padding: 10px 20px;
+    color: #2c3e50;
+    background-color: #ecf0f1;
+    margin: 5px;
+    display: inline-block;
+    border-radius: 5px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #3498db;
+    color: white;
+    transform: translateY(-5px); /* Lëviz elementin lart kur kalon mbi të */
+}
+
+/* Pseudo-elementi ::after për të krijuar një ndarje vizuale poshtë titullit */
+h2::after {
+    content: " ";
+    display: block;
+    width: 100px;
+    height: 4px;
+    background-color: #e74c3c;
+    margin: 10px auto;
+    transition: width 0.3s ease;
+}
+
+h2:hover::after {
+    width: 200px; /* Zgjerohet kur kursorin kalon mbi titull */
+}
+
+/* Animacion për kutitë e përmbajtjes */
+.box {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    background-color: #f39c12;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.box:hover {
+    background-color: #e74c3c;
+}
+
+/* Selektori i fëmijëve të parë për të stiluar vetëm kutinë e parë */
+.box:first-child {
+    background-color: #2ecc71;
+}
+
+/* Stilizimi i elementit të fundit në listë */
+ul li:last-child {
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+/* Pseudo-elementi ::before për të shtuar një ikonë para çdo item të listës */
+ul li::before {
+    content: "✔ ";
+    color: #2ecc71;
+}
