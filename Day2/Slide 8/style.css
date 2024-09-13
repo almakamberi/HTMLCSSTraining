@@ -1,36 +1,46 @@
-     /* Stilizimi fillestar për ekranet e vogla: një kolonë */
-     .container {
-        display: flex;
-        flex-direction: column;
+  /* Stilizimi për ekranet më të mëdha (desktop) */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: lightgray;
+}
+
+h1 {
+    text-align: center;
+    color: #3498db;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Media query për ekranet më të vogla se 768px (tableta dhe celularë) */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}
+
+/* Media query për ekranet më të vogla se 600px (celularë) */
+@media (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+
+    .container {
         padding: 10px;
-        background-color: #f7f7f7;
     }
 
-    .box {
-        background-color: #3498db;
-        color: white;
-        margin: 10px 0;
-        padding: 20px;
-        text-align: center;
-        border-radius: 8px;
+    h1 {
+        font-size: 20px;
+        color: #2ecc71;
     }
-
-    /* Ndryshimi i layout-it në dy kolona për ekranet më të mëdha se 768px */
-    @media (min-width: 768px) {
-        .container {
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-
-        .box {
-            width: 48%; /* Dy kolona me hapësirë mes tyre */
-        }
-    }
-
-    /* Ndryshimi i layout-it në tre kolona për ekranet më të mëdha se 1024px */
-    @media (min-width: 1024px) {
-        .box {
-            width: 30%; /* Tre kolona me hapësirë mes tyre */
-        }
-    }
+}
