@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia Integration Example</title>
+    <style>
+        .responsive-image {
+            max-width: 100%;
+            height: auto;
+        }
+
+        video, audio {
+            max-width: 100%;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Multimedia Integration Example</h1>
+
+    <!-- Image with attributes -->
+    <img src="picture.jpg" alt="A descriptive alt text for the image" class="responsive-image" width="600" height="400">
+
+    <!-- Audio with attributes -->
+    <audio controls autoplay loop muted preload="auto">
+        <source src="audio.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Video with attributes -->
+    <video controls autoplay loop muted preload="auto" poster="example-poster.jpg">
+        <source src="video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+</body>
+</html>
